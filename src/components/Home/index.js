@@ -1,11 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { dom } from 'isomorphic-jsx';
-import { css } from 'emotion';
+import { Text, TextField } from '@Uikit';
 
-const Home = () => <div class={field}>teste</div>;
-
-const field = css`
-  background: red;
-`;
+const Home = () => <TextField id="teste" type="text" label="Informe o valor da venda*" />;
 
 export default Home;
