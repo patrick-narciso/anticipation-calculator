@@ -34,8 +34,5 @@
     }
   ],
   "plugins": ["prettier", "local"],
-  "extends": ["eslint:recommended"],
-  "ecmaFeatures": {
-    "jsx": true
-  }
+  "extends": ["eslint:recommended"]
 }
