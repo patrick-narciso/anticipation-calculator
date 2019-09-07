@@ -8,14 +8,14 @@
     "ecmaVersion": 2018
   },
   "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true,
-        "optionalDependencies": false,
-        "peerDependencies": false
-      }
-    ],
+    // "import/no-extraneous-dependencies": [
+    //   "error",
+    //   {
+    //     "devDependencies": true,
+    //     "optionalDependencies": false,
+    //     "peerDependencies": false
+    //   }
+    // ],
     "sort-imports": "off",
     "import/no-unresolved": 0,
     "no-shadow": "off",
@@ -24,6 +24,18 @@
     "arrow-parens": "off",
     "object-curly-newline": "off"
   },
-  "plugins": ["prettier"],
-  "extends": ["airbnb"]
+  "overrides": [
+    {
+      "files": ["**/*.js", "**/*.jsx"],
+      "rules": {
+        "local/jsx-uses-my-pragma": "error",
+        "local/jsx-uses-vars": "error"
+      }
+    }
+  ],
+  "plugins": ["prettier", "local"],
+  "extends": ["eslint:recommended"],
+  "ecmaFeatures": {
+    "jsx": true
+  }
 }
