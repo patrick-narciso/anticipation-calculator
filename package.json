@@ -29,9 +29,10 @@
   },
   "homepage": "https://github.com/patrick-narciso/anticipation-calculator#readme",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.17",
@@ -53,9 +54,9 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.17",
     "design-system-utils": "^1.5.0",
-    "jsx-pragmatic": "^2.0.7",
+    "emotion": "^10.0.17",
+    "isomorphic-jsx": "^0.3.0",
     "source-map": "^0.7.3"
   }
 }
