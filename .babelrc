@@ -1,4 +1,17 @@
 {
   "presets": ["@babel/env"],
-  "plugins": ["emotion"]
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@": "./src/",
+          "@Uikit": "./src/components/Uikit"
+        }
+      }
+    ],
+    "emotion"
+  ]
 }

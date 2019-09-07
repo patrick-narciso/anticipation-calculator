@@ -1,0 +1,14 @@
+{
+  "include": ["**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "module": "es6",
+    "experimentalDecorators": true,
+    "paths": {
+      "@Uikit/*": ["./src/components/Uikit/*"],
+      "@/*": ["./src/*"]
+    }
+  }
+}
