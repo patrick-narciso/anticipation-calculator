@@ -3,6 +3,7 @@ import { dom } from 'isomorphic-jsx';
 import { css } from 'emotion';
 import { TextField } from '@Uikit';
 import tokens from '@Uikit/Tokens';
+import VMasker from 'vanilla-masker';
 
 const Home = () => {
   return (
@@ -40,6 +41,16 @@ const Home = () => {
     </Container>
   );
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  VMasker(document.getElementById('amount')).maskMoney({
+    precision: 2,
+    separator: ',',
+    delimiter: '.',
+    unit: 'R$',
+    zeroCents: true,
+  });
+});
 
 const Container = ({ children }) => (
   <div
