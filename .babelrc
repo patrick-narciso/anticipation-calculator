@@ -1,11 +1,18 @@
 {
   "presets": [
-    "@babel/env",
     [
       "@babel/preset-react",
       {
         "pragma": "dom",
         "throwIfNamespace": false
+      }
+    ],
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
       }
     ]
   ],
