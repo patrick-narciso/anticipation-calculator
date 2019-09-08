@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import { dom } from 'isomorphic-jsx';
-import { css } from 'emotion';
+import { cx, css } from 'emotion';
 import tokens from '../Tokens';
 
 const Field = ({ id, children, label }) => (
-  <div class={wrapper}>
+  <div class={cx(wrapper)}>
     {label && (
       <label class={labelInput} for={id}>
         {label}

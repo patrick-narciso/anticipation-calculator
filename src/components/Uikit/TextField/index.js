@@ -4,11 +4,12 @@ import { css } from 'emotion';
 import tokens from '../Tokens';
 import Field from '../Field';
 
-const TextField = ({ label, id, type, onChange, value }) => (
-  <Field label={label} id={id}>
+const TextField = ({ label, id, type, onChange, value, extraMessage }) => (
+  <Field label={label} id={id} extraMessage={extraMessage}>
     <div class={wrapper}>
       <input id={id} class={fieldInput} name={id} type={type} onchange={onChange} value={value || ''} />
     </div>
+    {extraMessage && <span class={extraInfo}>{extraMessage}</span>}
   </Field>
 );
 
@@ -28,6 +29,16 @@ const fieldInput = css`
   font-size: ${tokens.fontSize('xs')};
   font-family: ${tokens.get('type.regularFontFamily')};
   transition: all 0.2s ease;
+  &:focus {
+    border: 1px solid #66afe9;
+  }
+`;
+
+const extraInfo = css`
+  font-weight: bold;
+  font-size: ${tokens.fontSize('xxs')};
+  line-height: 14px;
+  color: ${tokens.color('grey', 'light')};
 `;
 
 export default TextField;
