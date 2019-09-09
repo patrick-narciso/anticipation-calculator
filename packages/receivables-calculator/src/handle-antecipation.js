@@ -13,11 +13,15 @@ const getInstallmentWithMdr = antecipation => {
 };
 
 const getInstallmentAntecipation = antecipation => {
-  const { installmentWithMdr, mdrRate, daysAntecipation } = antecipation;
+  const { installmentWithMdr, mdrRate, daysAntecipation = [] } = antecipation;
   const mdrPercent = mdrRate / 100;
   const dailyRate = mdrPercent / 30;
-  const result = installmentWithMdr - [daysAntecipation * dailyRate * installmentWithMdr];
-  return { ...antecipation, installmentAntecipationValue: parseFloat(result.toFixed(2)) };
+  const result = daysAntecipation.map(day => {
+    return {
+      [day]: installmentWithMdr - [day * dailyRate * installmentWithMdr],
+    };
+  });
+  return { ...antecipation, installmentAntecipation: result };
 };
 
 /**
