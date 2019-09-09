@@ -55,11 +55,12 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "@receivables/calculator": "file:./packages/receivables-calculator",
+    "PubSub": "^3.6.0",
     "design-system-utils": "^1.5.0",
     "emotion": "^10.0.17",
     "isomorphic-jsx": "^0.3.0",
     "source-map": "^0.7.3",
-    "vanilla-masker": "^1.2.0",
-    "@receivables/calculator": "file:./packages/receivables-calculator"
+    "vanilla-masker": "^1.2.0"
   }
 }
