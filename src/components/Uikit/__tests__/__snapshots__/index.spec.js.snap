@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ensures no design system changes 1`] = `
+DesignSystem {
+  "ds": Object {
+    "breakpoints": Object {
+      "sm": "768px",
+      "xs": "415px",
+      "xxs": "320px",
+    },
+    "colors": Object {
+      "brand": Object {
+        "black": "#656565",
+        "white": "#FFFFFF",
+      },
+      "colorPalette": Object {
+        "blue": Object {
+          "dark": "#3D75BB",
+          "light": "#5D9CEC",
+        },
+        "grey": Object {
+          "dark": "#F2F2F2",
+          "light": "#CECECE",
+        },
+      },
+    },
+    "type": Object {
+      "regularFontFamily": "Source Sans Pro, sans-serif",
+      "sizes": Object {
+        "base": "18px",
+        "l": "24px",
+        "s": "16px",
+        "xl": "48px",
+        "xs": "14px",
+        "xxs": "11px",
+      },
+    },
+  },
+  "opts": Object {
+    "fontSizeUnit": "rem",
+  },
+}
+`;

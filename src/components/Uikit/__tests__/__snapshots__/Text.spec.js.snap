@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should be render Text Component Bold variant correctly 1`] = `"<span class=\\"css-uw8vfg-TextBold-text\\"></span>"`;
+
+exports[`Should be render Text Component Detail variant correctly 1`] = `"<span class=\\"css-t1t0y7-TextDetail-text\\"></span>"`;
+
+exports[`Should be render Text Component Medium variant correctly 1`] = `"<span class=\\"css-1sgkqby-TextMedium-text\\"></span>"`;
+
+exports[`Should be render Text Component Reduced variant correctly 1`] = `"<span class=\\"css-18alwqt-TextReduced-text\\"></span>"`;
+
+exports[`Should be render Text Component correctly 1`] = `"<span class=\\"css-1rtppnv-text\\"></span>"`;

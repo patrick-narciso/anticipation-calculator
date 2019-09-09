@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should be render TextField Component with extraMessage correctly 1`] = `"<div class=\\"css-11k5a09-wrapper\\"><label class=\\"css-18tgiz1-labelInput\\" for=\\"installments\\">Em quantas parcelas*</label><div class=\\"css-1rdjunr-inputWrapper\\"><div class=\\"css-memc06-wrapper\\"><input id=\\"installments\\" class=\\"css-1u7nkg2-fieldInput\\" name=\\"installments\\" type=\\"number\\" onchange=\\"undefined\\" value=\\"\\"></input></div><span class=\\"css-1vd4a9j-extraInfo\\">Máximo de 12 parcelas</span></div></div>"`;
+
+exports[`Should be render TextField Component without extraMessage correctly 1`] = `"<div class=\\"css-11k5a09-wrapper\\"><label class=\\"css-18tgiz1-labelInput\\" for=\\"amount\\">Informe o valor da venda*</label><div class=\\"css-1rdjunr-inputWrapper\\"><div class=\\"css-memc06-wrapper\\"><input id=\\"amount\\" class=\\"css-1u7nkg2-fieldInput\\" name=\\"amount\\" type=\\"text\\" onchange=\\"undefined\\" value=\\"\\"></input></div></div></div>"`;
