@@ -12,7 +12,7 @@ export const validateForm = form => {
   return true;
 };
 
-const ocurrencesCount = (string, char) => {
+export const ocurrencesCount = (string, char) => {
   const ocurrences = string.reduce((acc, current) => {
     if (current === char) acc += 1;
     return acc;
