@@ -15,6 +15,13 @@
     "commit": "git-cz",
     "lint": "eslint ./src --fix"
   },
+  "pre-commit": [
+    "lint"
+  ],
+  "pre-push": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patrick-narciso/anticipation-calculator.git"
@@ -52,6 +59,8 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "npm-run-all": "^4.1.5",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1",
     "prettier": "^1.18.2",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
