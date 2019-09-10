@@ -1,6 +1,6 @@
 {
   "name": "anticipation-calculator",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Simulador de antecipação de recebíveis",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "start:server": "webpack-dev-server --mode development --open",
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
+    "release": "release-it",
     "test": "./node_modules/.bin/jest",
     "test:ci": "./node_modules/.bin/jest --ci --verbose",
     "test:watch": "./node_modules/.bin/jest --watchAll",
@@ -62,6 +63,7 @@
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.1",
     "prettier": "^1.18.2",
+    "release-it": "^12.3.6",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
