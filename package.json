@@ -63,7 +63,7 @@
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.1",
     "prettier": "^1.18.2",
-    "release-it": "^12.3.6",
+    "release-it": "^15.6.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
